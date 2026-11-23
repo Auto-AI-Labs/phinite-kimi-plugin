@@ -1,0 +1,37 @@
+{
+  "name": "phinite",
+  "version": "0.4.4",
+  "description": "Build, ship, run and debug Phinite agent graphs from Kimi Code through the hosted Phinite MCP server (OAuth sign-in), with the playbook's design rules as skills and a local project script.",
+  "author": {
+    "name": "Phinite CIQ use-case team"
+  },
+  "homepage": "https://github.com/Auto-AI-Labs/phinite-claudecode-plugin",
+  "keywords": [
+    "phinite",
+    "agents",
+    "agent-graphs",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/",
+  "systemPromptPath": "./SYSTEM.md",
+  "mcpServers": {
+    "phinite": {
+      "url": "https://mcp.dev.phinite.ai/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "Phinite",
+    "shortDescription": "Build, ship and debug Phinite agent graphs",
+    "longDescription": "Design Phinite agent graphs with the playbook's rules, deploy use-case folders, test and debug runs, and ship them behind triggers or the Chat API, as the signed-in Phinite user.",
+    "developerName": "Phinite CIQ use-case team",
+    "websiteURL": "https://phinite.ai",
+    "mcpOverrides": {
+      "phinite": {
+        "displayName": "Phinite",
+        "description": "Phinite platform tools, as the signed-in user"
+      }
+    }
+  }
+}
